@@ -1,0 +1,302 @@
+'<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Автоелектрик Млинів. Діагностика, ремонт електрики, виїзд до клієнта. Якісно, швидко, надійно." />
+  <meta name="keywords" content="автоелектрик Млинів, ремонт автоелектрики, електрик для авто, Млинів Рівненська область, авто не заводиться, виїзд автоелектрик" />
+  <meta name="author" content="Автоелектрик Млинів" />
+  <title>Автоелектрик Млинів | Діагностика та ремонт</title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Автоелектрик Млинів",
+    "image": "https://example.com/header-bg.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Млинів",
+      "addressRegion": "Рівненська область",
+      "addressCountry": "UA"
+    },
+    "telephone": "+380677014951",
+    "url": "https://example.com",
+    "openingHours": "Mo-Sa 08:00-18:00",
+    "priceRange": "$"
+  }
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: url(header-bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 254px;
+    color: #fff;
+    padding: 20px 0px 20px 0px;
+    /* margin-bottom: 38px; */
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+      /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);*/
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    header * {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1, header h2 {
+      margin: 0;
+      line-height: 1.2;
+      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .Mlyniv {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    header h2 {
+      font-size: 30px;
+    }
+
+    header h1, header h2, header p {
+      word-wrap: break-word;
+      white-space: normal;
+      max-width: 100%;
+    }
+
+    .call-btn {
+      display: inline-block;
+      background: #1abc9c;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: background 0.3s ease, transform 0.2s ease;
+      max-width: 90%;
+      word-wrap: break-word;
+    }
+
+    .call-btn:hover {
+      background: #16a085;
+      transform: scale(1.05);
+    }
+
+    .container {
+      padding-top: 291px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding-top: 280px;
+      }
+      header h2{
+        margin-bottom: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding-top: 320px;
+      }
+    }
+
+    .main, .location, .contacts, .gallery, .why-us, .how-to {
+      margin: 0 auto;
+      text-align: left;
+      max-width: 800px;
+      padding: 0 20px;
+      font-size: 20px;
+    }
+    .loctext {
+      display: flex;
+    }
+    .loctext p {
+      font-size: 20px;
+    }
+    .KnO {
+      display: inline-block;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 20px;
+
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 5px 0 5px 25px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "\2714";
+      color: #1abc9c;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    a {
+      color: #1abc9c;
+      text-decoration: none;
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (min-width: 769px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        height: 220px;
+      }
+      header h1 {
+        font-size: 26px;
+      }
+
+      header h2 {
+        font-size: 20px;
+      }
+
+      .Mlyniv {
+        font-size: 30px;
+        margin: 20px 0 20px 0;
+      }
+      .KnO {
+      display: inline-flex;
+      
+      }
+      .loctext {
+        display: inline-table;
+      }
+      .loctext p {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Автоелектрик-Діагност</h1>
+    <h2><a href="tel:+380677014951">+38 (067) 701-49-51</a></h2>
+    <p class="Mlyniv">Млинів</p>
+    <a href="tel:+380677014951" class="call-btn">Зателефонувати</a>
+  </header>
+
+  <div class="container">
+    <div class="main fade-in">
+      <h2>Наші послуги:</h2>
+      <ul>
+        <li>Діагностика несправностей двигуна</li>
+        <li>Ремонт проводки, електрообладнання</li>
+        <li>Ремонт блоків BSI, BCM, ABS...</li>
+        <li>Встановлення сигналізацій, трекерів</li>
+        <li>Відновлення після короткого замикання</li>
+      </ul>
+    </div>
+
+    <div class="location fade-in">
+      <div class="loctext"><h2>Де ми знаходимося: </h2>
+      <p class="KnO">Млинів. Княгині Ольги, 38</p></div>
+      
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d490.19894334816826!2d25.625712120075455!3d50.512911361628355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472f8026e521ced7%3A0xb3c41eeef9bf0fdb!2zR0o3Rys2SjYsINCc0LvQuNC90ZbQsiwg0KDRltCy0L3QtdC90YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDM1MTAw!5e1!3m2!1suk!2sua!4v1745174576013!5m2!1suk!2sua" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <img src="IMG_0437.JPG" alt="Карта та орієнтир до майстерні">
+    </div>
+
+    <div class="how-to fade-in">
+      <h2>Як доїхати:</h2>
+      <p class="go">Відео з маршрутом від кільця до майстерні. Натисніть Play, щоб переглянути:</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Як доїхати до автоелектрика у Млинові" allowfullscreen></iframe>
+    </div>
+
+    <div class="why-us fade-in">
+      <h2>Чому обирають нас:</h2>
+      <ul>
+        <li>Досвід та відповідальність</li>
+        <li>Сучасне обладнання</li>
+        <li>Розумні ціни та чесність</li>
+        <li>Гарантія на роботи</li>
+      </ul>
+    </div>
+
+    <div class="contacts fade-in">
+      <h2>Контакти:</h2>
+      <p><strong>Телефон:</strong> <a href="tel:+380677014951">+38 (067) 701-49-51</a></p>
+      <p><strong>Адреса майстерні:</strong> смт. Млинів, вул.Княгині Ольги, 38</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Шоб ваше авто бігало й бігало!</p>
+  </footer>
+</body>
+</html>
+'
